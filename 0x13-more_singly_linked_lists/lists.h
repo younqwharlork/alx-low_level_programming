@@ -1,19 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
-#include <unistd.h>
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -46,4 +34,4 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
-#endif /* LISTS_H */
+#endif
